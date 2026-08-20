@@ -296,6 +296,76 @@ body {
   letter-spacing: 0.08em;
 }
 
+.sponsor-section {
+  padding: 1rem 1rem 1.5rem;
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+.sponsor-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+  letter-spacing: 0.08em;
+  color: var(--soviet-red);
+  margin-bottom: 0.3rem;
+}
+.sponsor-sub {
+  font-size: 0.7rem;
+  color: var(--fg-muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 1.2rem;
+}
+.sponsor-menu {
+  border: 2px solid var(--soviet-red);
+  margin-bottom: 1.5rem;
+}
+.sponsor-menu-header {
+  background: var(--soviet-red);
+  color: var(--gold-bright);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  padding: 0.4rem 1rem;
+}
+.sponsor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--bg-alt);
+  font-size: 0.85rem;
+}
+.sponsor-item:last-child { border-bottom: none; }
+.sponsor-item .item-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  color: var(--soviet-red);
+  white-space: nowrap;
+}
+.swish-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.swish-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.swish-card img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+}
+.swish-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--fg-muted);
+}
+
 .footer {
   padding: 0.5rem 1rem 2rem;
   text-align: center;
@@ -367,6 +437,30 @@ body {
   </div>
   <div class="prob-names"><span>COMRADE P</span><span>COMRADE K</span></div>
   <p class="total-v" id="tv">Inga röster ännu. Rösta nu, kamrat!</p>
+</section>
+
+<div class="sep"><span>★</span></div>
+
+<section class="sponsor-section">
+  <h2 class="sponsor-title">SPONSRA KAMPEN</h2>
+  <p class="sponsor-sub">Bidra till kamraternas förberedelser via Swish</p>
+  <div class="sponsor-menu">
+    <div class="sponsor-menu-header">★ PREPARATMENY ★</div>
+    <div class="sponsor-item"><span>Kaffe</span><span class="item-price">25 KR</span></div>
+    <div class="sponsor-item"><span>Kreatin</span><span class="item-price">50 KR</span></div>
+    <div class="sponsor-item"><span>Ryssbulk</span><span class="item-price">1 000 KR</span></div>
+    <div class="sponsor-item"><span>Old school anabola</span><span class="item-price">10 000 KR</span></div>
+  </div>
+  <div class="swish-cards">
+    <div class="swish-card">
+      <img src="swish-p.png" alt="Swish QR-kod Comrade P">
+      <span class="swish-name">COMRADE P</span>
+    </div>
+    <div class="swish-card">
+      <img src="swish-k.png" alt="Swish QR-kod Comrade K">
+      <span class="swish-name">COMRADE K</span>
+    </div>
+  </div>
 </section>
 
 <div class="sep"><span>★</span></div>
